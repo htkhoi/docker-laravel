@@ -21,10 +21,10 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: homestead
-      MYSQL_USER: homestead
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: quiz
+      MYSQL_USER: suntech
+      MYSQL_PASSWORD: 123@
+      MYSQL_ROOT_PASSWORD: 123@123a
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     networks:
@@ -35,8 +35,8 @@ services:
     restart: always
     environment:
       PMA_HOST: mysql
-      PMA_USER: homestead
-      PMA_PASSWORD: secret
+      PMA_USER: suntech
+      PMA_PASSWORD: 123@123a
     volumes:
       - ./upload.ini:/usr/local/etc/php/php.ini
     ports:

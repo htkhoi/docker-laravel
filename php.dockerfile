@@ -36,7 +36,6 @@ RUN apk add --no-cache --virtual .build-deps \
         pdo_sqlite \
         pcntl \
         tokenizer \
-        imagick \
         xml \
         zip \
         intl \
